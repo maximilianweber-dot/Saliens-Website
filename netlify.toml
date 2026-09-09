@@ -1,0 +1,22 @@
+# Saliens — Netlify-Konfiguration
+# Reine statische Seite: kein Build-Step, publish = Projekt-Root.
+# "netlify deploy" bzw. Git-Deploy funktioniert damit ohne npm/Build.
+
+[build]
+  publish = "."
+  command = ""
+
+# Zusätzliche noindex-Absicherung auf HTTP-Header-Ebene (ergänzt das
+# <meta robots> in beiden Seiten und die robots.txt).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# Saubere URL: /about statt /about.html (Netlify "Pretty URLs" ist zusätzlich
+# standardmäßig aktiv; dieser Redirect macht die Kanonik explizit).
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
