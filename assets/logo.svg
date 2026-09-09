@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 48" role="img" aria-label="Saliens">
+  <!-- INTERIM-PLATZHALTER-LOGO — Lockup aus Spark-Mark + Wortmarke.
+       Wird durch das finale Figma-Logo ersetzt (Pfad /assets/logo.svg bleibt).
+       Hinweis: die Wortmarke nutzt hier eine System-Serife als Fallback, da in
+       einem <img>-SVG keine Webfont (Fraunces) geladen wird. Im Header wird
+       aktuell bewusst die HTML-Textwortmarke in Fraunces 700 gerendert. -->
+  <rect x="2" y="8" width="32" height="32" rx="9" fill="#FF5A36"/>
+  <path fill="#FFFBF6" d="M18 15c1.8 5.9 2.6 6.7 8.5 8.5-5.9 1.8-6.7 2.6-8.5 8.5-1.8-5.9-2.6-6.7-8.5-8.5 5.9-1.8 6.7-2.6 8.5-8.5z"/>
+  <text x="46" y="33" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" fill="#1C1512">Saliens</text>
+</svg>

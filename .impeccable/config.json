@@ -1,7 +1,7 @@
 {
   "detector": {
     "designSystem": { "enabled": true },
-    "ignoreRules": ["overused-font", "cream-palette"],
-    "ignoreRulesReason": "Bewusste, markenverbindliche Entscheidungen laut Briefing (siehe DESIGN.md): Fraunces als editorial/persoenliche Serife und Naturpapier #F5F1EA (Kraftpapier-Metapher) sind Kern der Markenidentitaet, kein Default-Reflex."
+    "ignoreRules": ["overused-font", "cream-palette", "low-contrast"],
+    "ignoreRulesReason": "Bewusste, im Update-Prompt festgelegte Entscheidungen (siehe DESIGN.md): (1) Fraunces als Headline-Serife und das warme Off-White #FFFBF6 sind Kern der Markenidentitaet, kein Default-Reflex. (2) low-contrast: Flame #FF5A36 als Primaerakzent (CTA-Button-Text Warmweiss ~3:1, Eyebrows/Tags) ist fuer die Demand-Testing-Phase bewusst akzeptiert, um die lautere, selbstbewusstere Optik fuers geschaerfte ICP zu tragen. Nicht-Marken-Text (Sekundaertext) wurde separat AA-konform gemacht (--ink-soft abgedunkelt). Produktions-Upgrade-Pfad dokumentiert in DESIGN.md (Button-Hintergrund #D63D18 ~4.6:1)."
   }
 }

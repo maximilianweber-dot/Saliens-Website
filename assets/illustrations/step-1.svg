@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Zielliste" fill="none" stroke="#FF5A36" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- INTERIM-PLATZHALTER — Zielaccounts / Target -->
+  <circle cx="24" cy="24" r="17"/>
+  <circle cx="24" cy="24" r="9"/>
+  <circle cx="24" cy="24" r="2.4" fill="#FF5A36" stroke="none"/>
+</svg>

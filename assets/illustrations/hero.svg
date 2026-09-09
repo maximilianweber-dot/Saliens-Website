@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Kuratiertes, versiegeltes Geschenk mit Überraschungsmoment">
+  <!-- INTERIM-PLATZHALTER — wird durch die finale Figma-Illustration ersetzt.
+       Einfach diese Datei überschreiben; Pfad /assets/illustrations/hero.svg bleibt. -->
+  <defs>
+    <linearGradient id="lidGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFBF6"/>
+      <stop offset="1" stop-color="#F3E9DE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Schatten -->
+  <ellipse cx="204" cy="342" rx="120" ry="18" fill="#1C1512" opacity="0.08"/>
+
+  <!-- Sonnengelb-Sparks (Überraschungsmoment) -->
+  <g fill="#FFC94D">
+    <path d="M306 96c4 14 6 16 20 20-14 4-16 6-20 20-4-14-6-16-20-20 14-4 16-6 20-20z"/>
+    <circle cx="264" cy="70" r="5"/>
+    <circle cx="330" cy="150" r="4"/>
+  </g>
+
+  <!-- Box-Körper -->
+  <rect x="112" y="196" width="176" height="140" rx="12" fill="#F3E9DE" stroke="#1C1512" stroke-opacity="0.14" stroke-width="2"/>
+  <!-- Deckel -->
+  <rect x="100" y="168" width="200" height="44" rx="10" fill="url(#lidGrad)" stroke="#1C1512" stroke-opacity="0.14" stroke-width="2"/>
+
+  <!-- Vertikales Band -->
+  <rect x="184" y="196" width="32" height="140" fill="#FF5A36"/>
+  <rect x="180" y="168" width="40" height="44" rx="8" fill="#FF5A36"/>
+
+  <!-- Schleife -->
+  <g fill="#FF5A36" stroke="#E8461F" stroke-width="2">
+    <path d="M200 168c-6-26-30-40-48-30-14 8-10 28 8 34 14 5 30 3 40-4z"/>
+    <path d="M200 168c6-26 30-40 48-30 14 8 10 28-8 34-14 5-30 3-40-4z"/>
+  </g>
+  <circle cx="200" cy="166" r="12" fill="#E8461F"/>
+  <circle cx="200" cy="164" r="5" fill="#FFC94D"/>
+</svg>

@@ -4,34 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <title>Saliens — Gifting-as-a-Service für B2B</title>
-  <meta name="description" content="Individuell kuratierte, physische Geschenke, eingebettet in euren Sales-Prozess. Ausgelöst per Klick, versiegelt versendet — ohne Formular, ohne dass der Empfänger etwas ahnt.">
+  <title>Saliens — Cold Gifting für B2B</title>
+  <meta name="description" content="Kaltakquise, die sich warm anfühlt. Individuell kuratierte, personalisierte Gifts machen kalte Leads auf euch aufmerksam — ohne dass euer Team einen Finger krümmt.">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-  <!-- Fonts: Fraunces (Headlines) + General Sans (Body/CTA) -->
+  <!-- Fonts: Fraunces (Headlines, jetzt 700) + General Sans (Body/CTA) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://api.fontshare.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- impeccable-disable cramped-padding -- False Positive: farbige Full-Bleed-Sektionen (problem/compare/proof) setzen ihren Innenabstand über einen zentrierten .container mit clamp()-Padding. Der statische Scanner kann clamp() nicht auswerten und liest es als 0; real gerendert ist der Abstand großzügig (im Browser verifiziert). Regel bleibt in allen anderen Dateien aktiv. -->
+  <!-- impeccable-disable cramped-padding -- False Positive: farbige Full-Bleed-Sektionen setzen ihren Innenabstand über einen zentrierten .container mit clamp()-Padding, das der statische Scanner als 0 liest. Real gerendert ist der Abstand großzügig (im Browser verifiziert). -->
+  <!-- impeccable-disable hero-eyebrow-chip -- Bewusst gewünscht (Update-Prompt): der "Cold Gifting"-Eyebrow ist das Use-Case-Label und Teil der lauteren, selbstbewussteren Markenausrichtung fürs geschärfte ICP. -->
 
   <!-- ============================================================ HEADER -->
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="/" aria-label="Saliens — Startseite">
-        <svg class="brand__seal" viewBox="0 0 64 64" aria-hidden="true">
-          <path fill="#6B2430" d="M32 4c3 4 8 3 11 6s2 8 5 11 8 4 8 9-6 6-8 9-2 8-5 11-8 2-11 6-8-3-11-6-2-8-5-11-8-4-8-9 6-6 8-9 2-8 5-11 8-2 11-6z"/>
-          <circle cx="32" cy="32" r="19" fill="none" stroke="#4E1A23" stroke-width="1.4" opacity="0.5"/>
-          <text x="32" y="41" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-style="italic" fill="#F5F1EA">S</text>
-        </svg>
-        Saliens
-      </a>
+      <!-- Logo: HTML-Textwortmarke (Fraunces 700). Für das finale Figma-Logo
+           diesen Link-Inhalt durch <img class="brand__logo" src="/assets/logo.svg" alt="Saliens">
+           ersetzen — sonst nichts. -->
+      <a class="brand" href="/" aria-label="Saliens — Startseite">Saliens</a>
       <nav class="nav" aria-label="Hauptnavigation">
         <a class="nav__link nav__link--about" href="/about">Über uns</a>
         <a class="btn" href="#gespraech">Gespräch buchen</a>
@@ -45,49 +42,26 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <h1 class="hero__title reveal reveal--1">Der Moment, in dem Outbound wieder <span class="accent">ankommt</span>.</h1>
-          <p class="hero__sub reveal reveal--2">
-            Saliens bringt individuell kuratierte, physische Geschenke in euren
-            bestehenden Sales-Prozess — ausgelöst per Klick, versiegelt versendet.
-            Ohne Formular, ohne dass der Empfänger vorher etwas ausfüllt oder ahnt.
+          <p class="eyebrow hero__eyebrow reveal reveal--1">Cold Gifting</p>
+          <h1 class="hero__title reveal reveal--2">Kaltakquise, die sich <span class="accent">warm</span> anfühlt.</h1>
+          <p class="hero__sub reveal reveal--3">
+            Macht kalte Leads mit individuell kuratierten und personalisierten
+            Gifts auf euch aufmerksam. Ohne, dass euer Team einen Finger krümmt.
           </p>
-          <div class="hero__actions reveal reveal--3">
+          <div class="hero__actions reveal reveal--4">
             <a class="btn" href="#gespraech">
-              15 Minuten Gespräch buchen
+              Gespräch buchen
               <span class="btn-arrow" aria-hidden="true">→</span>
             </a>
-            <p class="hero__note">Kein Pitch. Ein Gespräch, ob es für euch passt.</p>
+            <p class="hero__note">Wir arbeiten aktuell exklusiv mit einer Handvoll schnell wachsender Startups.</p>
           </div>
         </div>
 
-        <!-- Signatur-Objekt: versiegeltes Kraftpaket (ersetzt Produktfoto,
-             sobald echte Unboxing-Fotos vorliegen — siehe /assets-Hinweis) -->
-        <div class="hero__figure reveal reveal--2" aria-hidden="true">
-          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <!-- Schatten -->
-            <ellipse cx="205" cy="352" rx="132" ry="20" fill="#221C19" opacity="0.10"/>
-            <!-- rechte Seitenfläche -->
-            <path d="M300 168 L352 128 L352 288 L300 328 Z" fill="#DCD2C0"/>
-            <!-- Deckelfläche -->
-            <path d="M100 168 L152 128 L352 128 L300 168 Z" fill="#F0EBE0"/>
-            <!-- Frontfläche -->
-            <path d="M100 168 L300 168 L300 328 L100 328 Z" fill="#EAE3D6"/>
-            <!-- Kanten -->
-            <path d="M100 168 L300 168 L300 328 L100 328 Z" fill="none" stroke="#221C19" stroke-opacity="0.14" stroke-width="1.4"/>
-            <path d="M300 168 L352 128 M300 328 L352 288 M100 168 L152 128" stroke="#221C19" stroke-opacity="0.10" stroke-width="1.4"/>
-            <!-- Messing-Kordel: vertikal (Deckel + Front) -->
-            <path d="M226 128 L200 168 L200 328" fill="none" stroke="#B08D57" stroke-width="6" stroke-linejoin="round"/>
-            <path d="M226 128 L200 168 L200 328" fill="none" stroke="#9a7a48" stroke-width="1.4" stroke-opacity="0.6"/>
-            <!-- Messing-Kordel: horizontal über Front -->
-            <path d="M100 244 L300 244" fill="none" stroke="#B08D57" stroke-width="6"/>
-            <path d="M300 244 L352 205" fill="none" stroke="#9a7a48" stroke-width="6"/>
-            <!-- Wachssiegel am Kreuzungspunkt -->
-            <g transform="translate(200 244)">
-              <path fill="#6B2430" d="M0 -40c3.4 4.4 8.6 3.2 12 6.4s2.2 8.6 5.6 11.8 8.6 4.4 8.6 9.8-6.4 6.6-8.6 9.8-2.2 8.6-5.6 11.8-8.6 2.2-12 6.4-8.6-3.2-12-6.4-2.2-8.6-5.6-11.8-8.6-4.4-8.6-9.8 6.4-6.6 8.6-9.8 2.2-8.6 5.6-11.8 8.6-2 12-6.4z"/>
-              <circle r="21" fill="none" stroke="#4E1A23" stroke-width="1.4" opacity="0.55"/>
-              <text x="0" y="9" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="27" font-style="italic" fill="#F5F1EA">S</text>
-            </g>
-          </svg>
+        <!-- Hero-Illustration als austauschbares Asset (Figma-Version ersetzt
+             später einfach /assets/illustrations/hero.svg) -->
+        <div class="hero__figure reveal reveal--2">
+          <img src="/assets/illustrations/hero.svg" width="460" height="460"
+               alt="Ein kuratiertes, versiegeltes Geschenk mit einem Funken als Überraschungsmoment">
         </div>
       </div>
     </section>
@@ -98,25 +72,24 @@
         <div class="problem__grid">
           <div class="section-head" style="margin:0">
             <p class="eyebrow">Das Problem</p>
-            <h2>Die Postfächer sind voll.<br>Die Reply-Rates fallen.</h2>
+            <h2>Die Postfächer sind voll. Die Reply-Rates fallen.</h2>
             <p class="lede" style="margin-top:1.25rem">
-              Für komplexe B2B-Produkte entsteht Vertrauen zwischen Menschen —
-              nicht durch Volumen. Kein Cold Call und keine Mail stellt diese
-              Beziehung her. Ein durchdachtes, physisches Signal schon.
+              Im B2B entsteht Vertrauen über Wertschätzung und Personalisierung.
+              Nicht durch Volumen.
             </p>
           </div>
           <ul class="problem__list">
             <li>
               <strong>Immer dieselben Kanäle</strong>
-              Mail, LinkedIn und Cold Call landen im selben überfüllten Postfach. Differenzierung wird nahezu unmöglich.
+              Noch eine Cold Mail, noch ein LinkedIn-Connect. Entscheider bei euren Zielaccounts haben's satt, bevor sie überhaupt lesen, wer ihr seid.
             </li>
             <li>
-              <strong>Ansprache ohne Kontext</strong>
-              Generische Sequenzen ohne echtes Verständnis des Accounts. Der Entscheider denkt: „Schon wieder will mir jemand etwas verkaufen."
+              <strong>Überflutung durch KI</strong>
+              Euer SDR-Team verbrennt Zeit für Aufmerksamkeit, die nach drei Sekunden wieder weg ist. Volumenbasierter Outreach mit KI-Tools macht Outreach beliebig.
             </li>
             <li>
               <strong>Der Preis dafür</strong>
-              Sinkende Reply-Rates, verbrannte Leads, hoher Zeitaufwand pro SQL — und trotzdem dringt man zu Entscheidern kaum durch.
+              Sinkende Reply-Rates, verbrannte Leads, hoher Zeitaufwand pro SQL. Und trotzdem dringt man nicht durch.
             </li>
           </ul>
         </div>
@@ -128,30 +101,58 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">So arbeiten wir</p>
-          <h2>Von der Strategie bis zum versiegelten Paket.</h2>
+          <h2>Full-Service Gifting. Ihr gebt nur das Signal, der Rest geht auf uns.</h2>
         </div>
         <ol class="steps">
           <li class="step">
+            <img class="step__icon" src="/assets/illustrations/step-1.svg" alt="" aria-hidden="true">
             <div class="step__num">01</div>
-            <h3>Onboarding &amp; Kuration</h3>
-            <p>Gemeinsame Strategie-Session. Wir bauen euren individuellen Gifting-Katalog — abgestimmt auf Accounts, Use Cases und Budget.</p>
+            <h3>Account-Zielliste</h3>
+            <p>Ihr schickt uns eure Top-Accounts. Oder wir helfen, sie zu definieren. Egal, ob eine Handvoll oder mehrere hundert.</p>
           </li>
           <li class="step">
+            <img class="step__icon" src="/assets/illustrations/step-2.svg" alt="" aria-hidden="true">
             <div class="step__num">02</div>
-            <h3>Integration</h3>
-            <p>Anbindung an euren CRM- und Slack-Flow. Der Trigger fügt sich in bestehende Sequenzen ein, statt sie zu ersetzen.</p>
+            <h3>Kuration</h3>
+            <p>Wir wählen und personalisieren das Gift passend zu Account, Person und Anlass. Kein Katalog, keine Massenware. Wir wissen, was konvertiert. Hier liegt der größte Hebel.</p>
           </li>
           <li class="step">
+            <img class="step__icon" src="/assets/illustrations/step-3.svg" alt="" aria-hidden="true">
             <div class="step__num">03</div>
-            <h3>Auslösen per Klick</h3>
-            <p>SDR oder AE lösen das passende Gift mit einem Klick aus. Kuration, Adressvalidierung und Fulfillment laufen im Hintergrund.</p>
+            <h3>Versand mit einem Klick</h3>
+            <p>Ihr gebt das Signal, wir übernehmen Fulfillment, Adressvalidierung und Zustellung end-to-end. Auf Wunsch mit Tracking über personalisierte Landing Pages.</p>
           </li>
           <li class="step">
+            <img class="step__icon" src="/assets/illustrations/step-4.svg" alt="" aria-hidden="true">
             <div class="step__num">04</div>
             <h3>Das Erlebnis</h3>
-            <p>Beim Empfänger kommt ein versiegeltes, persönliches Paket an — ohne vorheriges Formular, ohne dass er es kommen sah.</p>
+            <p>Beim Empfänger kommt ein versiegeltes, persönliches Paket an. Positiver Überraschungsmoment garantiert. Ein Gesprächseinstieg, den keine Cold Mail und kein Cold Call dieser Welt liefert.</p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <!-- ========================================================= ZWEI WEGE -->
+    <section class="section ways" id="modelle">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Zusammenarbeit</p>
+          <h2>So arbeiten wir zusammen. Beides funktioniert.</h2>
+        </div>
+        <div class="ways__grid">
+          <div class="model">
+            <img class="model__icon" src="/assets/illustrations/model-campaign.svg" alt="" aria-hidden="true">
+            <span class="model__tag">Modell 1</span>
+            <h3>Kampagnen-basiert</h3>
+            <p>Ihr definiert mit uns eine Zielliste und eine Anzahl an Leads. Wir kuratieren, verschicken und dokumentieren, als klar abgegrenzte Kampagne. Ideal für den Einstieg oder einen konkreten Anlass.</p>
+          </div>
+          <div class="model">
+            <img class="model__icon" src="/assets/illustrations/model-signal.svg" alt="" aria-hidden="true">
+            <span class="model__tag">Modell 2</span>
+            <h3>Signal- / Trigger-basiert</h3>
+            <p>Wir sind in euer Outbound-System integriert. Euer Team signalisiert, wer wann was erhalten soll. So einfach wie ein Klick auf einen Button. Wir übernehmen den Rest im Hintergrund, laufend statt als Einzelkampagne.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -160,14 +161,14 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Der Unterschied</p>
-          <h2>Kein digitales Gifting-Regal.<br>Ein physisches GTM-Werkzeug.</h2>
+          <h2>Kein digitales Gifting-Regal. Ein physisches GTM-Werkzeug.</h2>
         </div>
         <div class="compare__grid">
           <div class="compare__card compare__card--them">
             <span class="compare__tag">Generische Gifting-Plattformen</span>
             <h3>Software von der Stange</h3>
             <ul class="compare__points">
-              <li>Digitaler Gutschein-Link mit Adressformular — der Überraschungseffekt ist weg, bevor das Geschenk ankommt</li>
+              <li>Digitaler Gutschein-Link mit Adressformular. Der Überraschungseffekt ist weg, bevor das Geschenk ankommt</li>
               <li>Katalog von der Stange, für alle Empfänger gleich</li>
               <li>Self-Service-Regal: Auswahl und Aufwand bleiben bei euch</li>
               <li>Optimiert auf Volumen und Automatisierung</li>
@@ -177,9 +178,9 @@
             <span class="compare__tag">Saliens</span>
             <h3>Kuratiert, versiegelt, persönlich</h3>
             <ul class="compare__points">
-              <li>Versiegelt und physisch adressiert — der Empfänger füllt nichts aus und ahnt nichts vorher</li>
+              <li>Versiegelt und physisch adressiert. Der Empfänger füllt nichts aus und ahnt nichts vorher</li>
               <li>Pro Firma, Kontext und Use Case individuell kuratiert</li>
-              <li>Full-Service von Strategie bis Fulfillment — für euch ein Klick</li>
+              <li>Full-Service von Strategie bis Fulfillment. Für euch ein Klick</li>
               <li>Optimiert auf Wirkung. Für den deutschen Markt: Dokumentation der Gifts pro Empfänger und Datum</li>
             </ul>
           </div>
@@ -196,21 +197,23 @@
         </div>
         <ul class="cases">
           <li class="case">
-            <p class="case__kicker">Erstkontakt</p>
-            <h3>Cold Gifting</h3>
-            <p>Ein durchdachtes Objekt öffnet die Tür zum Account — bevor die erste Mail überhaupt geöffnet würde.</p>
+            <h3>Vor dem ersten Cold Call oder der ersten Mail</h3>
+            <p>Als Icebreaker, bevor ihr überhaupt Kontakt aufnehmt.</p>
           </li>
           <li class="case">
-            <p class="case__kicker">Warm-up</p>
-            <h3>Vor Demo &amp; Meeting</h3>
-            <p>Ein Signal vor dem Termin. Das Gespräch startet wärmer, aufmerksamer und verbindlicher.</p>
+            <h3>Für eure wichtigsten Zielaccounts</h3>
+            <p>Dort, wo ein gebuchtes Meeting den Aufwand zehnfach wert ist. Zum Beispiel im Rahmen einer ABM-Kampagne.</p>
           </li>
           <li class="case">
-            <p class="case__kicker">Follow-up</p>
-            <h3>Nach der Interaktion</h3>
-            <p>Nach Demo, Webinar oder Whitepaper-Download: das richtige Gift verankert euch, wenn die Entscheidung reift.</p>
+            <h3>Als Ersatz für die nächste generische Sequenz</h3>
+            <p>Die ohnehin ignoriert worden wäre.</p>
           </li>
         </ul>
+        <p class="case__outlook">
+          Wenn ihr Gifting zu einem späteren Zeitpunkt im Sales-Prozess oder zur
+          Kundenbindung mit bestehenden Kunden einsetzen wollt,
+          <a class="textlink" href="#gespraech">sprecht uns an</a>.
+        </p>
       </div>
     </section>
 
@@ -224,11 +227,11 @@
           </div>
           <div>
             <p>
-              Wir arbeiten aktuell mit ausgewählten Partnern in laufenden Pilotprojekten.
-              Das ist eine Entscheidung: Hohe Personalisierung und Qualität pro Kunde sind
-              uns wichtiger als Skalierung. Jedes Gifting-Programm wird von Hand kuratiert —
-              das lässt sich nicht beliebig breit ausrollen, ohne genau das zu verlieren,
-              was es wirken lässt.
+              Wir arbeiten aktuell exklusiv mit einer Handvoll schnell wachsender
+              Startups. Das ist eine Entscheidung: Personalisierung und Qualität pro
+              Kunde sind uns wichtiger als Skalierung. Jedes Gifting-Programm wird von
+              Hand kuratiert. Das lässt sich nicht beliebig breit ausrollen, ohne genau
+              das zu verlieren, was es wirken lässt.
             </p>
             <ul class="proof__points">
               <li>Jedes Programm individuell kuratiert, nicht aus dem Katalog</li>
@@ -245,7 +248,7 @@
       <div class="container">
         <div class="cta__inner">
           <p class="eyebrow" style="justify-content:center">Gespräch buchen</p>
-          <h2>15 Minuten. Ob Gifting zu eurem Prozess passt.</h2>
+          <h2>15 Minuten. Ob Cold Gifting zu eurem Prozess passt.</h2>
           <p class="lede">
             Kein Pitch-Marathon. Wir schauen gemeinsam auf euren Outbound, eure
             wichtigsten Accounts und ob ein physischer Kanal für euch Sinn ergibt.
@@ -254,17 +257,12 @@
 
         <!-- ============================================================= -->
         <!-- CAL.COM EMBED HIER EINFÜGEN                                    -->
-        <!-- Den folgenden Platzhalter-Container komplett durch das echte  -->
-        <!-- Cal.com-Embed-Snippet ersetzen, sobald der Account steht.     -->
-        <!-- (Inline-Embed empfohlen, damit die Buchung ohne Klick sichtbar -->
-        <!--  auf der Seite liegt.) Derselbe Embed gehört auch auf          -->
-        <!--  about.html an die dortige CTA-Stelle.                         -->
+        <!-- Platzhalter-Container komplett durch das echte Cal.com-Inline- -->
+        <!-- Embed-Snippet ersetzen. Derselbe Embed gehört auch auf         -->
+        <!-- about.html an die dortige CTA-Stelle.                          -->
         <!-- ============================================================= -->
         <div class="cal-embed" id="cal-placeholder" role="note" aria-label="Buchungskalender – wird nachgereicht">
-          <svg class="cal-embed__seal" viewBox="0 0 64 64" aria-hidden="true">
-            <path fill="#6B2430" d="M32 4c3 4 8 3 11 6s2 8 5 11 8 4 8 9-6 6-8 9-2 8-5 11-8 2-11 6-8-3-11-6-2-8-5-11-8-4-8-9 6-6 8-9 2-8 5-11 8-2 11-6z"/>
-            <text x="32" y="41" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-style="italic" fill="#F5F1EA">S</text>
-          </svg>
+          <img class="cal-embed__mark" src="favicon.svg" alt="" aria-hidden="true">
           <span class="cal-embed__title">Buchungskalender folgt</span>
           <p>Hier wird das Cal.com-Inline-Embed eingesetzt. Bis dahin steht das <code>&lt;!-- CAL.COM EMBED HIER EINFÜGEN --&gt;</code>-Snippet als Platzhalter im Code.</p>
         </div>
@@ -281,15 +279,28 @@
         <div class="faq">
           <details class="faq__item">
             <summary class="faq__q">
+              Ist das nicht zu viel Aufwand für kalte Leads, die vielleicht nie antworten?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__a">
+              <p>
+                Genau deshalb ist Kuration hier entscheidend: Ihr verschwendet kein Gift
+                auf Streuverlust, sondern setzt es gezielt bei den Accounts ein, bei denen
+                sich ein einziges gebuchtes Meeting sofort auszahlt. Ob das fünfzig oder
+                fünfhundert Accounts sind, entscheidet ihr.
+              </p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">
               Wie teuer und aufwändig ist das im Vergleich zu digitalem Gifting?
               <span class="faq__icon" aria-hidden="true"></span>
             </summary>
             <div class="faq__a">
               <p>
-                Für euren SDR oder AE ist es deutlich weniger aufwändig: kein Geschenk
-                auswählen, kein digitaler Link, den jemand versenden muss. Ein Klick als
-                Signal reicht — alles andere, von der Kuration über die Adressvalidierung
-                bis zum Fulfillment, läuft im Hintergrund bei uns.
+                Für euer Team deutlich weniger Aufwand. Kein Aussuchen von Geschenken,
+                kein Verschicken eines Links. Wir sind bewusst Full-Service, damit ihr
+                euch auf das Wertstiftende fokussieren könnt: Meetings und Closing.
               </p>
             </div>
           </details>
@@ -300,24 +311,23 @@
             </summary>
             <div class="faq__a">
               <p>
-                Das Onboarding dauert typischerweise wenige Tage. Das größte Bottleneck
-                ist gelegentlich das Sourcing einzelner Gift-Bestandteile — besonders bei
-                individuellen Personalisierungen kann das ein bis zwei Wochen brauchen.
-                Der Trigger selbst ist schnell an euren bestehenden Flow angebunden.
+                Onboarding geschieht meist in wenigen Tagen. Größter Zeitfaktor ist teils
+                das Sourcing der Gift-Bestandteile bei starker Personalisierung (ein bis
+                zwei Wochen). Hier nehmen wir uns aber lieber die Zeit, das vernünftig
+                aufzusetzen.
               </p>
             </div>
           </details>
           <details class="faq__item">
             <summary class="faq__q">
-              Warum kann ich das nicht selbst in-house machen?
+              Warum nicht selbst in-house machen?
               <span class="faq__icon" aria-hidden="true"></span>
             </summary>
             <div class="faq__a">
               <p>
-                Könnt ihr natürlich. Erfahrungsgemäß ist Gifting für viele Unternehmen
-                aber ein langer, nerviger Prozess, für den intern keine Kapazität da ist.
-                Unser bestehendes Playbook und die Integration geben eurem Vertrieb und
-                Marketing die Zeit zurück für die Kernarbeit — das Verkaufen selbst.
+                Könnt ihr. Aber Gifting wird für die meisten Teams schnell ein nerviger
+                Nebenprozess, für den intern niemand Kapazität hat. Wir geben eurem Team
+                die Zeit für die Kernarbeit zurück. Und wir wissen, was funktioniert.
               </p>
             </div>
           </details>
@@ -330,8 +340,7 @@
       <div class="container">
         <hr class="rule" style="margin-bottom:var(--section-y)">
         <div class="cta__inner">
-          <h2>Wenn euer nächster wichtiger Account ein Signal verdient —</h2>
-          <p class="lede">Lasst uns 15 Minuten sprechen.</p>
+          <h2>Lasst uns eure erste Cold-Gifting-Kampagne aufsetzen.</h2>
           <p style="margin-top:2rem">
             <a class="btn" href="#gespraech">
               15 Minuten Gespräch buchen
@@ -349,14 +358,8 @@
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <a class="brand" href="/" aria-label="Saliens — Startseite">
-            <svg class="brand__seal" viewBox="0 0 64 64" aria-hidden="true">
-              <path fill="#6B2430" d="M32 4c3 4 8 3 11 6s2 8 5 11 8 4 8 9-6 6-8 9-2 8-5 11-8 2-11 6-8-3-11-6-2-8-5-11-8-4-8-9 6-6 8-9 2-8 5-11 8-2 11-6z"/>
-              <text x="32" y="41" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-style="italic" fill="#F5F1EA">S</text>
-            </svg>
-            Saliens
-          </a>
-          <p class="footer__tag">Physisches B2B-Go-to-Market aus Berlin. Aufmerksamkeit, die man verdient — nicht erzwingt.</p>
+          <a class="brand" href="/" aria-label="Saliens — Startseite">Saliens</a>
+          <p class="footer__tag">Cold Gifting für schnell wachsende B2B-Startups. Kaltakquise, die sich warm anfühlt.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer-Navigation">
           <a href="/">Startseite</a>
