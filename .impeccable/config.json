@@ -1,0 +1,7 @@
+{
+  "detector": {
+    "designSystem": { "enabled": true },
+    "ignoreRules": ["overused-font", "cream-palette"],
+    "ignoreRulesReason": "Bewusste, markenverbindliche Entscheidungen laut Briefing (siehe DESIGN.md): Fraunces als editorial/persoenliche Serife und Naturpapier #F5F1EA (Kraftpapier-Metapher) sind Kern der Markenidentitaet, kein Default-Reflex."
+  }
+}

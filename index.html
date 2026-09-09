@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- impeccable-disable cramped-padding -- False Positive: farbige Full-Bleed-Sektionen (problem/compare/proof) setzen ihren Innenabstand über einen zentrierten .container mit clamp()-Padding. Der statische Scanner kann clamp() nicht auswerten und liest es als 0; real gerendert ist der Abstand großzügig (im Browser verifiziert). Regel bleibt in allen anderen Dateien aktiv. -->
 
   <!-- ============================================================ HEADER -->
   <header class="site-header">
@@ -44,14 +45,13 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow reveal reveal--1">Gifting-as-a-Service · B2B</p>
-          <h1 class="hero__title reveal reveal--2">Der Moment, in dem Outbound wieder <span class="accent">ankommt</span>.</h1>
-          <p class="hero__sub reveal reveal--3">
+          <h1 class="hero__title reveal reveal--1">Der Moment, in dem Outbound wieder <span class="accent">ankommt</span>.</h1>
+          <p class="hero__sub reveal reveal--2">
             Saliens bringt individuell kuratierte, physische Geschenke in euren
             bestehenden Sales-Prozess — ausgelöst per Klick, versiegelt versendet.
             Ohne Formular, ohne dass der Empfänger vorher etwas ausfüllt oder ahnt.
           </p>
-          <div class="hero__actions reveal reveal--4">
+          <div class="hero__actions reveal reveal--3">
             <a class="btn" href="#gespraech">
               15 Minuten Gespräch buchen
               <span class="btn-arrow" aria-hidden="true">→</span>
@@ -62,7 +62,7 @@
 
         <!-- Signatur-Objekt: versiegeltes Kraftpaket (ersetzt Produktfoto,
              sobald echte Unboxing-Fotos vorliegen — siehe /assets-Hinweis) -->
-        <div class="hero__figure reveal reveal--3" aria-hidden="true">
+        <div class="hero__figure reveal reveal--2" aria-hidden="true">
           <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
             <!-- Schatten -->
             <ellipse cx="205" cy="352" rx="132" ry="20" fill="#221C19" opacity="0.10"/>
